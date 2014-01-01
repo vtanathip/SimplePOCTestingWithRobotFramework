@@ -27,3 +27,11 @@ then follow this
 1. `pip install robotframework`
 2. `pip install robotframework-selenium2library`
 3. `pip install robotframework-ride` or using installer from this [Download link](https://code.google.com/p/robotframework-ride/downloads/list)
+
+### How to run this test ###
+
+if you follow instruction use this
+
+`pybot Kapook_check_lotto.txt`
+
+and wait for magic things.
