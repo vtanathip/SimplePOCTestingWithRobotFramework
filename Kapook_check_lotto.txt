@@ -9,13 +9,14 @@ Test Teardown     Close Browser
 *** Test Cases ***
 Open Web Browser
 	Given browser is opened to kapook web page
-	When user check a lotto number "561072"
+	When user check a lotto number "561072" and also print this lotto to text file
+	Then user open lotto web content
 
 *** Keywords ***
 browser is opened to kapook web page
 	Open Browser to kapook web page
 
-user check a lotto number "${lottoNumber}"
-	Check lotto number   ${lottoNumber}
-
+user check a lotto number "${number}" and also print this lotto to text file
+	${status} =   Check lotto number   ${number}
+	call printer support   ${status}
 
