@@ -22,3 +22,8 @@ Open Browser to kapook web page
 Kapook Web Page Should Be Open
 	Title Should Be   กระปุกดอทคอม รวม เกมส์ เกม ดูดวง ฟังเพลง เพลง หาเพื่อน เกมส์ทำอาหาร กลอน ทำนายฝัน ดารา ฟุตบอล มากมาย
 	Location Should Be   ${KAPOOK URL}
+
+Check lotto number
+	[Arguments]    ${lottoNumber}
+	Location Should Be   ${KAPOOK URL}
+	Element should contain  css=#lotto  ${lottoNumber}
