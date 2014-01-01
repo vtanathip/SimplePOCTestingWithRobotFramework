@@ -1,0 +1,24 @@
+*** Settings ***
+Documentation     A resource file with reusable keywords and variables.
+...
+...               The system specific keywords created here form our own
+...               domain specific language. They utilize keywords provided
+...               by the imported Selenium2Library.
+Library           Selenium2Library
+
+*** Variables ***
+${SERVER}         kapook.com
+${BROWSER}        Firefox
+${DELAY}          0
+${KAPOOK URL}     http://${SERVER}/
+
+*** Keywords ***
+Open Browser to kapook web page
+    Open Browser    ${KAPOOK URL}    ${BROWSER}
+    Maximize Browser Window
+    Set Selenium Speed    ${DELAY}
+    Kapook Web Page Should Be Open
+
+Kapook Web Page Should Be Open
+	Title Should Be   กระปุกดอทคอม รวม เกมส์ เกม ดูดวง ฟังเพลง เพลง หาเพื่อน เกมส์ทำอาหาร กลอน ทำนายฝัน ดารา ฟุตบอล มากมาย
+	Location Should Be   ${KAPOOK URL}

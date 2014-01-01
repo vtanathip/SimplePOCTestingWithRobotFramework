@@ -1,0 +1,16 @@
+*** Settings ***
+Documentation     A Gherkin style test.
+...
+...               Testing Kapook Website
+...               This Test will find lotto and compare it
+Resource          resource.txt
+Test Teardown     Close Browser
+
+*** Test Cases ***
+Open Web Browser
+	Given browser is opened to kapook web page
+
+*** Keywords ***
+browser is opened to kapook web page
+	Open Browser to kapook web page
+
