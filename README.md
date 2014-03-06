@@ -1,32 +1,20 @@
-## Simple testing with robot framework ##
+## Required package ##
+1. Python 2.7.6 [Download link](http://www.python.org/ftp/python/2.7.6/python-2.7.6.msi)
+1. wxPython 2.8.12.1 [Download link](http://sourceforge.net/projects/wxpython/files/wxPython/2.8.12.1/wxPython2.8-win32-unicode-2.8.12.1-py27.exe/download)
+1. Robot Framework 2.8.3 [Download link](https://pypi.python.org/packages/any/r/robotframework/robotframework-2.8.4.win32.exe#md5=538a3fcd2b1f222b978b2f1cf2ae93ca)
+1. PIP 1.5.4 Installer [Download link](http://www.lfd.uci.edu/~gohlke/pythonlibs/xyaoaydo/pip-1.5.4.win32-py2.7.exe)
+1. Robot Framework IDE 1.2.3 [Download link](https://robotframework-ride.googlecode.com/files/robotframework-ride-1.2.3.win32.exe)
 
-**Test write in gherkin style** and completely fine with Windows 7.
+## Installation Step ##
 
-Simple create test suite and keywords for check lotto in website `kapook.com` and also create own library for any purpose.
+1. First install python from download link and set system variables path `PYTHON_HOME` value is `[python path]` then set to path system variables
+1. in system variables path add this `;%PYTHON_HOME%\Scripts;` too (this step telling window to find all scripts in here ex. robot framework)
+1. install wxPython from .exe file
+1. install Robot Framework from .exe file
+1. install PIP installer .exe file
+2. install Robot Framework IDE .exe file
+1. in command line `pip install robotframework-selenium2library`
 
-`FYI: this is prove of concept project`
-
-###Required package ###
-
-1. Python 2.7.3 [Download link](http://www.python.org/getit/)
-2. wxPython 2.8.12.1  [Download link](http://sourceforge.net/projects/wxpython/files/wxPython/2.8.12.1/)
-3. Robot Framework 2.8.3  [Download link](http://robotframework.org/)
-
-another version of this is fine but in this project it following this
-
-### Shoulda this stuffs ###
-
-- Python packages ( pip )
-
-but you must install ez_setup for install pip so download this file [Download link](https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py) and run with this command
-
-`python ez_setup.py install`
-
-then follow this 
-
-1. `pip install robotframework`
-2. `pip install robotframework-selenium2library`
-3. `pip install robotframework-ride` or using installer from this [Download link](https://code.google.com/p/robotframework-ride/downloads/list)
 
 ### How to run this test ###
 
