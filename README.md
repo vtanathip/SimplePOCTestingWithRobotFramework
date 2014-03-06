@@ -16,7 +16,7 @@
 1. in command line `pip install robotframework-selenium2library`
 
 
-### How to run this test ###
+## How to run this test ##
 
 if you follow instruction use this
 
